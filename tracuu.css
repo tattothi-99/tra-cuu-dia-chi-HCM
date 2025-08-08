@@ -1,0 +1,238 @@
+body {
+    background-image: url("ban-do-tphcm-sau-sap-nhap.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    color: rgb(3, 3, 100);
+    font-size: 50px;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.title1 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.title2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#inputCu {
+    background: transparent;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 24px;
+    width: 592px;
+    font-size: 20px;
+}
+
+#inputMoi {
+    background: transparent;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 24px;
+    width: 592px;
+    font-size: 20px;
+}
+
+.search-box {
+    width: 600px;
+    background: #fff;
+    margin: 0px auto 0;
+}
+
+.search-box2 {
+    width: 600px;
+    background: #fff;
+    margin: 0px auto 0;
+}
+
+.row {
+    display: blog;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.row2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.atcp-box ul {
+    padding: 0px 10px;
+}
+
+.atcp-box2 ul {
+    padding: 0px 10px;
+}
+
+.atcp-box ul li {
+    font-size: 20px;
+    list-style: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.atcp-box2 ul li {
+    font-size: 20px;
+    list-style: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.atcp-box ul li:hover {
+    background: white;
+}
+
+.atcp-box2 ul li:hover {
+    background: white;
+}
+
+.atcp-box {
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.atcp-box2 {
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+#btnSearch {
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    height: 30px;
+    width: 110px;
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;  
+    margin-right: auto;
+}
+
+#btnSearch2 {
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    height: 30px;
+    width: 110px;
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;  
+    margin-right: auto;
+}
+
+
+#btnSearch:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
+#btnSearch2:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
+#result {
+    margin: 40px 20px 40px 20px;
+    font-size: 30px;
+    font-weight: bold; 
+    color: green; 
+    border: 2px solid darkgreen;
+    background-color: whitesmoke;
+    width: max-content; 
+    padding: 5px 10px 5px 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#result2 {
+    margin: 40px 20px 40px 20px;
+    font-size: 30px;
+    font-weight: bold; 
+    color: green; 
+    border: 2px solid darkgreen;
+    background-color: whitesmoke;
+    width: max-content;
+    max-width: 90%; 
+    padding: 5px 10px 5px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-bottom: 70px; */
+}
+
+.footer {
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgb(177, 220, 236);
+    text-align: center;
+    padding: 10px 0;
+    border: none;
+}
+
+@media (max-width: 600px) {
+    body{
+        background-image: url("(2)ban-do-tphcm-sau-sap-nhap.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #inputCu {
+        width: 90%;
+    }
+    #inputMoi {
+        width: 90%;
+    }
+    #btnSearch {
+        width: 80%;
+    }
+    #btnSearch2 {
+        width: 80%;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .search-box {
+        width: 90%;
+    }
+    .search-box2 {
+        width: 90%;
+    }
+    #btnSearch {
+        width: 80px;
+        margin-bottom: 20px;
+    }
+    #btnSearch2 {
+        width: 80px;
+        margin-bottom: 20px;
+    }
+    #result {
+        max-width: 90%;
+        font-size: 20px;
+        word-wrap: break-word;
+        margin: auto;
+    }
+    #result2 {
+        max-width: 90%;
+        font-size: 20px;
+        word-wrap: break-word;
+        margin: auto;
+        /* margin-bottom: 60px; */
+    }
+}
