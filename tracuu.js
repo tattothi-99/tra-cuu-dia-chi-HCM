@@ -1,16 +1,22 @@
 const data = {
-    "phuong ben nghe": "Phường Sài Gòn",
-    "phuong da kao": ["Phường Sài Gòn"," Phường Tân Định"],
+    "phuong ben nghe": "Phường Sài Gòn", 
+    "phuong nguyen thai binh": ["Phường Sài Gòn","Phường Bến Thành"],
+    "phuong da kao": ["Phường Sài Gòn","Phường Tân Định"],
     "phuong tan dinh": "Phường Tân Định",
-    "phuong ben thanh": "Phường Bến Thành",
-    "phuong nguyen cu trinh": "Phường Cầu Ông Lãnh",
-    "phuong 2 quan 3": "Phường Bàn Cờ",
+    "phuong ben thanh": "Phường Bến Thành", "phuong pham ngu lao": "Phường Bến Thành",
+    "phuong cau ong lanh": ["Phường Cầu Ông Lãnh","Phường Bến Thành"],
+    "phuong nguyen cu trinh": "Phường Cầu Ông Lãnh", "phuong cau kho": "Phường Cầu Ông Lãnh", "phuong co giang": "Phường Cầu Ông Lãnh",
+    "phuong 1 quan 3": "Phường Bàn Cờ", "phuong 2 quan 3": "Phường Bàn Cờ", "phuong 3 quan 3": "Phường Bàn Cờ", "phuong 5 quan 3": "Phường Bàn Cờ",
     "phuong 4 quan 3": ["Phường Bàn Cờ"," Phường Xuân Hòa"],
     "phuong vo thi sau": "Phường Xuân Hòa",
-    "phuong 9 quan 3": "Phường Nhiêu Lộc",
-    "phuong 16 quan 4": "Phường Xóm Chiếu",
-    "phuong 9 quan 4": "Phường Khánh Hội",
-    "phuong 1 quan 4": "Phường Vĩnh Hội",
+    "phuong 9 quan 3": "Phường Nhiêu Lộc", "phuong 11 quan 3": "Phường Nhiêu Lộc", "phuong 12 quan 3": "Phường Nhiêu Lộc", "phuong 14 quan 3": "Phường Nhiêu Lộc",
+    "phuong 13 quan 4": "Phường Xóm Chiếu", "phuong 16 quan 4": "Phường Xóm Chiếu", "phuong 18 quan 4": "Phường Xóm Chiếu", 
+    "phuong 15 quan 4": ["Phường Xóm Chiếu", "Phường Khánh Hội"],
+    "phuong 8 quan 4": "Phường Khánh Hội", "phuong 9 quan 4": "Phường Khánh Hội", 
+    "phuong 2 quan 4": ["Phường Khánh Hội", "Phường Vĩnh Hội"], 
+    "phuong 4 quan 4": ["Phường Khánh Hội", "Phường Vĩnh Hội"],
+    "phuong 1 quan 4": "Phường Vĩnh Hội", "phuong 3 quan 4": "Phường Vĩnh Hội",
+
     "phuong 2 quan 5": "Phường Chợ Quán",
     "phuong 7 quan 5": "Phường An Đông",
     "phuong 12 quan 5": "Phường Chợ Lớn",
@@ -26,7 +32,7 @@ const data = {
     "phuong 1 quan 11": "Phường Minh Phụng",
     "phuong hiep thanh quan 12": "Phường Tân Thới Hiệp",
     "phuong tan thoi nhat": "Phường Đông Hưng Thuận",
-    "phương 12 quan binh thanh": "Phường Bình Thạnh",
+    "phuong 12 quan binh thanh": "Phường Bình Thạnh",
     "phuong 10 quan phu nhuan": "Phường Phú Nhuận",
     "phuong tan son nhi": "Phường Tân Sơn Nhì",
     "phuong truong thanh": "Phường Long Phước",
@@ -47,10 +53,17 @@ document.getElementById("btnSearch").addEventListener("click", function() {
   let dulieu = removeVietnameseTones(diachicu.trim());
   let ketqua = data[dulieu];
 
+  function formatKetQua(x) {
+  if (Array.isArray(x)) 
+    return "Có thể là:\n• " + x.join("\n• ");
+    return "Địa chỉ mới: " + x;
+  }
+
   if (ketqua) {
-    resultBox.innerText = ketqua;
+    resultBox.innerText = ketqua ? formatKetQua(ketqua) : "Không tìm thấy";
     resultBox.style.display = "block";
-  } else {
+  }
+  else {
     resultBox.innerText = "Không tìm thấy";
     resultBox.style.display = "block";
   }
@@ -61,4 +74,7 @@ document.getElementById("inputCu").addEventListener("keydown", function(event) {
     document.getElementById("btnSearch").click();
   }
 });
+
+
+resultBox.innerText = ketqua ? formatKetQua(ketqua) : "Không tìm thấy";
 

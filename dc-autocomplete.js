@@ -1,16 +1,21 @@
 let availableKeywords = [
     "Phường Bến Nghé",
+    "Phường Nguyễn Thái Bình",
     "Phường Đa Kao",
     "Phường Tân Định",
-    "Phường Bến Thành",
-    "Phường Nguyễn Cư Trinh",
-    "Phường 2 Quận 3",
+    "Phường Bến Thành", "Phường Phạm Ngũ Lão",
+    "Phường Cầu Ông Lãnh",
+    "Phường Nguyễn Cư Trinh", "Phường Cầu Kho", "Phường Cô Giang",
+    "Phường 1 Quận 3", "Phường 2 Quận 3", "Phường 3 Quận 3", "Phường 5 Quận 3",
     "Phường 4 Quận 3",
     "Phường Võ Thị Sáu",
-    "Phường 9 Quận 3",
-    "Phường 16 Quận 4",
-    "Phường 9 Quận 4",
-    "Phường 1 Quận 4",
+    "Phường 9 Quận 3", "Phường 11 Quận 3", "Phường 12 Quận 3", "Phường 14 Quận 3",
+    "Phường 13 Quận 4", "Phường 16 Quận 4", "Phường 18 Quận 4",
+    "Phường 15 Quận 4", 
+    "Phường 8 Quận 4", "Phường 9 Quận 4",
+    "Phường 2 Quận 4", "Phường 4 Quận 4",
+    "Phường 1 Quận 4", "Phường 3 Quận 4",
+    
     "Phường 2 Quận 5",
     "Phường 7 Quận 5",
     "Phường 12 Quận 5",
@@ -47,7 +52,7 @@ nhaplieu.onkeyup = function() {
     display(atcpRS);
 
     if (!atcpRS.length) {
-        atcpBox.innerHTML = " ";
+        atcpBox.innerHTML = "";
     }
 };
 
@@ -61,5 +66,5 @@ function display(atcpRS) {
 
 function selectInput(list) {
     nhaplieu.value = list.innerHTML;
-    atcpBox.innerHTML = " ";
+    atcpBox.innerHTML = "";
 };

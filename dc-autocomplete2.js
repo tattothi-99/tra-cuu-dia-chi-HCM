@@ -9,6 +9,13 @@ let availableKeywords2 = [
     "Phường Xóm Chiếu",
     "Phường Khánh Hội",
     "Phường Vĩnh Hội",
+    "Phường Chợ Quán",
+    "Phường An Đông",
+    "Phường Chợ Lớn",
+    "Phường Bình Tây",
+    "Phường Bình Tiên",
+    "Phường Bình Phú",
+    "Phường Phú Lâm",
 ];
 
 const atcpBox2 = document.querySelector(".atcp-box2");
