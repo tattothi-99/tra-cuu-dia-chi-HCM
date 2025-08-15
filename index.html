@@ -7,42 +7,38 @@
     <link rel="stylesheet" href="tracuu.css">
 </head>
 <body>
-    <h1>Website tra cứu địa chỉ sau sáp nhập</h1>
-    <h3>Giới thiệu: Trang web giúp người dân tra địa chỉ cũ để biết địa chỉ mới sau sáp nhập.</h3>
-    
-    <div>
-        <p class="title1">Tra cứu địa chỉ cũ:</p>
+    <header>
+        <h1>Tra cứu địa chỉ sau sáp nhập - TP.HCM cũ</h1>
+        <h3>Giới thiệu: Trang web giúp người dân tra địa chỉ sau sáp nhập.</h3>
+    </header>
+    <div class="card">
+        <p class="title">Tra cứu địa chỉ cũ:</p>
         <div class="search-box">
             <div class="row">  
-                <input type="text" id="inputCu" placeholder="Nhập địa chỉ cũ" autocomplete="off"></input>
+                <input type="text" id="inputCu" placeholder="Nhập địa chỉ cũ (VD: phuong 4 quan 3/Phường 4 Quận 3)" autocomplete="off"></input>
             </div>
-            <div class="atcp-box">
-                <ul>
-                    <li onclick = selectInput(this)>Phường 12 Quận 10</li>
-                    <li onclick = selectInput(this)>Phường Tân Sơn Nhì</li>
-                </ul>
-            </div>  
+            <div class="atcp-box"></div>  
         </div>
         <button id="btnSearch">Search</button>
+        <div class="meta">
+            <span id="countBadge" class="badge"></span>
+            <span id="noteTip" class="tip" title=""></span>
+        </div>
         <p id="result" style="display: none;"></p>
     </div>
     <script src="tracuu.js"></script>
     <script src="dc-autocomplete.js"></script>
     
-    <div>
-        <p class="title2">Tra cứu địa chỉ mới:</p>
+    <div class="card">
+        <p class="title">Tra cứu địa chỉ mới:</p>
         <div class="search-box2">
             <div class="row2">
-                <input type="text" id="inputMoi" placeholder="Nhập địa chỉ mới" autocomplete="off"></input>
+                <input type="text" id="inputMoi" placeholder="Nhập địa chỉ mới (VD: phuong cho quan/Phường Chợ Quán)" autocomplete="off"></input>
             </div>
-            <div class="atcp-box2">
-                <ul id="atcp-list2">
-                    <li onclick = selectInput2(this)>Phường Bến Thành</li>
-                    <li onclick = selectInput2(this)>Phường Xóm Chiếu</li>
-                </ul>
-            </div>  
+            <div class="atcp-box2"></div>  
         </div>
         <button id="btnSearch2">Search</button>
+
         <p id="result2" style="display: none;"></p>
     </div>
     <script src="tracuu2.js"></script>

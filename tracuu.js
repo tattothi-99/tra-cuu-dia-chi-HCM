@@ -1,44 +1,201 @@
 const data = {
     "phuong ben nghe": "Phường Sài Gòn", 
-    "phuong nguyen thai binh": ["Phường Sài Gòn","Phường Bến Thành"],
-    "phuong da kao": ["Phường Sài Gòn","Phường Tân Định"],
+    "phuong nguyen thai binh": {
+      new: ["Phường Sài Gòn","Phường Bến Thành"],
+      note: "Nguyễn Thái Bình chia 2 phần theo NQ 1685"
+    },
+    "phuong da kao": "Phường Đa Kao",
+    "phuong da kao": {
+      new: ["Phường Sài Gòn", "Phường Tân Định"],
+      note: "Đa Kao chia 2 phần theo NQ 1685"
+    },
     "phuong tan dinh": "Phường Tân Định",
     "phuong ben thanh": "Phường Bến Thành", "phuong pham ngu lao": "Phường Bến Thành",
-    "phuong cau ong lanh": ["Phường Cầu Ông Lãnh","Phường Bến Thành"],
+    "phuong cau ong lanh": {
+      new: ["Phường Cầu Ông Lãnh","Phường Bến Thành"],
+      note: "Cầu Ông Lãnh chia 2 phần theo NQ 1685"
+    },
     "phuong nguyen cu trinh": "Phường Cầu Ông Lãnh", "phuong cau kho": "Phường Cầu Ông Lãnh", "phuong co giang": "Phường Cầu Ông Lãnh",
     "phuong 1 quan 3": "Phường Bàn Cờ", "phuong 2 quan 3": "Phường Bàn Cờ", "phuong 3 quan 3": "Phường Bàn Cờ", "phuong 5 quan 3": "Phường Bàn Cờ",
-    "phuong 4 quan 3": ["Phường Bàn Cờ"," Phường Xuân Hòa"],
-    "phuong vo thi sau": "Phường Xuân Hòa",
+    "phuong 4 quan 3": {
+      new: ["Phường Bàn Cờ"," Phường Xuân Hòa"],
+      note: "Phường 4 quận 3 chia 2 phần theo NQ 1685"
+    },
+    "phuong vo thi sau quan 3": "Phường Xuân Hòa",
     "phuong 9 quan 3": "Phường Nhiêu Lộc", "phuong 11 quan 3": "Phường Nhiêu Lộc", "phuong 12 quan 3": "Phường Nhiêu Lộc", "phuong 14 quan 3": "Phường Nhiêu Lộc",
     "phuong 13 quan 4": "Phường Xóm Chiếu", "phuong 16 quan 4": "Phường Xóm Chiếu", "phuong 18 quan 4": "Phường Xóm Chiếu", 
-    "phuong 15 quan 4": ["Phường Xóm Chiếu", "Phường Khánh Hội"],
+    "phuong 15 quan 4": {
+      new: ["Phường Xóm Chiếu", "Phường Khánh Hội"],
+      note: "Phường 15 quận 4 chia 2 phần theo NQ 1685"
+    },
     "phuong 8 quan 4": "Phường Khánh Hội", "phuong 9 quan 4": "Phường Khánh Hội", 
-    "phuong 2 quan 4": ["Phường Khánh Hội", "Phường Vĩnh Hội"], 
-    "phuong 4 quan 4": ["Phường Khánh Hội", "Phường Vĩnh Hội"],
+    "phuong 2 quan 4": {
+      new: ["Phường Khánh Hội", "Phường Vĩnh Hội"], 
+      note: "Phường 2 quận 4 chia 2 phần theo NQ 1685"
+    },
+    "phuong 4 quan 4": "Phường Vĩnh Hội", "phuong 1 quan 4": "Phường Vĩnh Hội", "phuong 3 quan 4": "Phường Vĩnh Hội",
+    "phuong 4 quan 4": {
+      new: ["Phường Khánh Hội", "Phường Vĩnh Hội"],
+      note: "Phường 4 quận 4 chia 2 phần theo NQ 1685"
+    },
     "phuong 1 quan 4": "Phường Vĩnh Hội", "phuong 3 quan 4": "Phường Vĩnh Hội",
-
-    "phuong 2 quan 5": "Phường Chợ Quán",
-    "phuong 7 quan 5": "Phường An Đông",
-    "phuong 12 quan 5": "Phường Chợ Lớn",
-    "phuong 2 quan 6": "Phường Bình Tây",
-    "phuong 8 quan 6": "Phường Bình Tiên",
-    "phuong 11 quan 6": "Phường Bình Phú",
-    "phuong 14 quan 6": "Phường Phú Lâm",
-
+    "phuong 1 quan 5": "Phường Chợ Quán", "phuong 2 quan 5": "Phường Chợ Quán", "phuong 4 quan 5": "Phường Chợ Quán",
+    "phuong 5 quan 5": "Phường An Đông", "phuong 7 quan 5": "Phường An Đông", "phuong 9 quan 5": "Phường An Đông",
+    "phuong 11 quan 5": "Phường Chợ Lớn", "phuong 12 quan 5": "Phường Chợ Lớn", "phuong 13 quan 5": "Phường Chợ Lớn", "phuong 14 quan 5": "Phường Chợ Lớn",
+    "phuong 2 quan 6": "Phường Bình Tây", "phuong 9 quan 6": "Phường Bình Tây",
+    "phuong 1 quan 6": "Phường Bình Tiên", "phuong 7 quan 6": "Phường Bình Tiên", "phuong 8 quan 6": "Phường Bình Tiên",
+    "phuong 10 quan 6": "Phường Bình Phú", "phuong 11 quan 6": "Phường Bình Phú", 
+    "phuong 16 quan 6": {
+      new: ["Phường Bình Phú", ""],
+      note: "Phường Bình Phú chia 2 phần theo NQ 1685"
+    },
+    "phuong 12 quan 6": "Phường Phú Lâm", "phuong 13 quan 6": "Phường Phú Lâm", "phuong 14 quan 6": "Phường Phú Lâm",
+    "phuong binh thuan": "Phường Tân Thuận", "phuong tan thuan dong": "Phường Tân Thuận", "phuong tan thuan tay": "Phường Tân Thuận",
+    "phuong phu thuan quan 7": "Phường Phú Thuận", 
+    "phuong phu my quan 7": {
+      new: ["Phường Phú Thuận", "Phường Tân Mỹ"],
+      note: "Phú Mỹ chia 2 phần theo NQ 1685"
+    },
     "phuong tan phu quan 7": "Phường Tân Mỹ",
-    "phuong 4 quan 8": "Phường Chánh Hưng",
-    "phuong 12 quan 10": "Phường Hòa Hưng",
-    "phuong 15 quan 10": "Phường Hòa Hưng",
-    "phuong 1 quan 11": "Phường Minh Phụng",
-    "phuong hiep thanh quan 12": "Phường Tân Thới Hiệp",
-    "phuong tan thoi nhat": "Phường Đông Hưng Thuận",
-    "phuong 12 quan binh thanh": "Phường Bình Thạnh",
-    "phuong 10 quan phu nhuan": "Phường Phú Nhuận",
+    "phuong tan phong": "Phường Tân Hưng", "phuong tan quy": "Phường Tân Hưng", "phuong tan kieng": "Phường Tân Hưng","phuong tan hung": "Phường Tân Hưng",
+    "phuong 4 quan 8": "Phường Chánh Hưng", "phuong rach ong": "Phường Chánh Hưng", "phuong hung phu": "Phường Chánh Hưng",
+    "phuong 5 quan 8": {
+      new: ["Phường Chánh Hưng", "Phường Bình Đông"],
+      note: "Phường 5 quận 8 chia 2 phần theo NQ 1685"
+    },
+    "phuong 14 quan 8": "Phường Phú Định", "phuong 15 quan 8": "Phường Phú Định", "phuong xom cui": "Phường Phú Định",
+    "phuong 16 quan 8": {
+      new: ["Phường Phú Định", ""],
+      note: "Phường 16 quận 8 chia 2 phần theo NQ 1685"
+    },
+    "phuong 6 quan 8": "Phường Bình Đông", "xa an phu tay huyen binh chanh": "Phường Bình Đông",
+    "phuong 7 quan 8": {
+      new: ["Phường Bình Đông", ""],
+      note: "Phường 7 quận 8 chia 2 phần theo NQ 1685"
+    },
+    "phuong 6 quan 10": "Phường Diên Hồng", "phuong 8 quan 10": "Phường Diên Hồng",
+    "phuong 14 quan 10": {
+      new: ["Phường Diên Hồng", "Phường Hòa Hưng"],
+      note: "Phường 14 quận 10 chia 2 phần theo NQ 1685"
+    },
+    "phuong 1 quan 10": "Phường Vườn Lài", "phuong 2 quan 10": "Phường Vườn Lài", "phuong 4 quan 10": "Phường Vườn Lài", "phuong 9 quan 10": "Phường Vườn Lài", "phuong 10 quan 10": "Phường Vườn Lài",
+    "phuong 12 quan 10": "Phường Hòa Hưng", "phuong 13 quan 10": "Phường Hòa Hưng" , "phuong 15 quan 10": "Phường Hòa Hưng",
+    "phuong 1 quan 11": "Phường Minh Phụng", "phuong 7 quan 11": "Phường Minh Phụng", "phuong 16 quan 11": "Phường Minh Phụng",
+    "phuong 3 quan 11": "Phường Bình Thới", "phuong 10 quan 11": "Phường Bình Thới", 
+    "phuong 8 quan 11": {
+      new: ["Phường Bình Thới", "Phường Phú Thọ"],
+      note: "Phường 8 quận 11 chia 2 phần theo NQ 1685"
+    },
+    "phuong 5 quan 11": "Phường Hòa Bình", "phuong 14 quan 11": "Phường Hòa Bình",
+    "phuong 11 quan 11": "Phường Phú Thọ", "phuong 15 quan 11": "Phường Phú Thọ",
+    "phuong tan thoi nhat": "Phường Đông Hưng Thuận", "phuong tan hung thuan": "Phường Đông Hưng Thuận", "phuong dong hung thuan": "Phường Đông Hưng Thuận",
+    "phuong tan chanh hiep": "Phường Trung Mỹ Tây", "phuong trung my tay": "Phường Trung Mỹ Tây",
+    "phuong hiep thanh quan 12": "Phường Tân Thới Hiệp", "phuong tan thoi hiep": "Phường Tân Thới Hiệp",
+    "phuong thanh xuan": "Phường Thới An", "phuong thoi an": "Phường Thới An",
+    "phuong thanh loc": "Phường An Phú Đông", "phuong an phu dong": "Phường An Phú Đông",
+    "phuong binh tri dong b": "Phường An Lạc", "phuong an lac a": "Phường An Lạc", "phuong an lac": "Phường An Lạc",
+    "phuong binh hung hoa b": "Phường Bình Tân",
+    "phuong binh tri dong a": {
+      new: ["Phường Bình Tân", "Phường Bình Trị Đông"],
+      note: "Phường Bình Trị Đông A chia 2 phần theo NQ 1685"
+    },
+    "phuong tan tao": {
+      new: ["Phường Bình Tân", "Phường Tân Tạo"],
+      note: "Phường Tân Tạo chia 2 phần theo NQ 1685"
+    },
+    "xa tan kien": "Phường Tân Tạo",
+    "phuong tan tao a": "Phường Tân Tạo",
+    "phuong binh tri dong": "Phường Bình Trị Đông",
+    "phuong binh hung hoa a": {
+      new: ["Phường Bình Trị Đông", "Phường Bình Hưng Hòa"],
+      note: "Phường Bình Hưng Hòa A chia 2 phần theo NQ 1685"
+    },
+    "phuong binh hung hoa": "Phường Bình Hưng Hòa",
+    "phuong son ky": {
+      new: ["Phường Bình Hưng Hòa", "Phường Tân Sơn Nhì"],
+      note: "Phường Sơn Kỳ chia 2 phần theo NQ 1685"
+    },
+    "phuong 1 quan binh thanh": "Phường Gia Định", "phuong 2 quan binh thanh": "Phường Gia Định", "phuong 7 quan binh thanh": "Phường Gia Định", "phuong 17 quan binh thanh": "Phường Gia Định",
+    "phuong 12 quan binh thanh": "Phường Bình Thạnh", "phuong 14 quan binh thanh": "Phường Bình Thạnh", "phuong 26 quan binh thanh": "Phường Bình Thạnh",
+    "phuong 5 quan binh thanh": "Phường Bình Lợi Trung", "phuong 11 quan binh thanh": "Phường Bình Lợi Trung", "phuong 13 quan binh thanh": "Phường Bình Lợi Trung",
+    "phuong 19 quan binh thanh": "Phường Thạnh Mỹ Tây", "phuong 22 quan binh thanh": "Phường Thạnh Mỹ Tây", "phuong 25 quan binh thanh": "Phường Thạnh Mỹ Tây",
+    "phuong 27 quan binh thanh": "Phường Bình Quới", "phuong 28 quan binh thanh": "Phường Bình Quới",
+    "phuong 1 quan go vap": "Phường Hạnh Thông", "phuong 3 quan go vap": "Phường Hạnh Thông",
+    "phuong 5 quan go vap": "Phường An Nhơn", "phuong 6 quan go vap": "Phường An Nhơn",
+    "phuong 10 quan go vap": "Phường Gò Vấp", "phuong 17 quan go vap": "Phường Gò Vấp",
+    "phuong 15 quan go vap": "Phường An Hội Đông", "phuong 16 quan go vap": "Phường An Hội Đông",
+    "phuong 8 quan go vap": "Phường Thông Tây Hội", "phuong 11 quan go vap": "Phường Thông Tây Hội",
+    "phuong 12 quan go vap": "Phường An Hội Tây", "phuong 14 quan go vap": "Phường An Hội Tây",
+    "phuong 4 quan phu nhuan": "Phường Đức Nhuận", "phuong 5 quan phu nhuan": "Phường Đức Nhuận", "phuong 9 quan phu nhuan": "Phường Đức Nhuận",
+    "phuong 1 quan phu nhuan": "Phường Cầu Kiệu", "phuong 2 quan phu nhuan": "Phường Cầu Kiệu", "phuong 7 quan phu nhuan": "Phường Cầu Kiệu", 
+    "phuong 15 quan phu nhuan": {
+      new: ["Phường Cầu Kiệu", "Phường Phú Nhuận"],
+      note: "Phường 15 quận Phú Nhuận chia 2 phần theo NQ 1685"
+    },
+    "phuong 8 quan phu nhuan": "Phường Phú Nhuận", "phuong 10 quan phu nhuan": "Phường Phú Nhuận", "phuong 11 quan phu nhuan": "Phường Phú Nhuận", "phuong 13 quan phu nhuan": "Phường Phú Nhuận",
+    "phuong 1 quan tan binh": "Phường Tân Sơn Hòa", "phuong 2 quan tan binh": "Phường Tân Sơn Hòa", "phuong 3 quan tan binh": "Phường Tân Sơn Hòa",
+    "phuong 4 quan tan binh": "Phường Tân Sơn Nhất", "phuong 5 quan tan binh": "Phường Tân Sơn Nhất", "phuong 7 quan tan binh": "Phường Tân Sơn Nhất",
+    "phuong 6 quan tan binh": "Phường Tân Hòa", "phuong 8 quan tan binh": "Phường Tân Hòa", "phuong 9 quan tan binh": "Phường Tân Hòa",
+    "phuong 10 quan tan binh": "Phường Bảy Hiền", "phuong 11 quan tan binh": "Phường Bảy Hiền", "phuong 12 quan tan binh": "Phường Bảy Hiền",
+    "phuong 13 quan tan binh": "Phường Tân Bình", "phuong 14 quan tan binh": "Phường Tân Bình", 
+    "phuong 15 quan tan binh": {
+      new: ["Phường Tân Bình", "Phường Tân Sơn"],
+      note: "Phường 15 quận Tân Bình chia 2 phần theo NQ 1685"
+    },
+    "phuong tay thanh": "Phường Tây Thạnh", 
+    "phuong son ky": {
+      new: ["Phường Tây Thạnh", "Phường Tân Sơn Nhì"],
+      note: "Phường Sơn Kỳ chia 2 phần theo NQ 1685"
+    },
     "phuong tan son nhi": "Phường Tân Sơn Nhì",
-    "phuong truong thanh": "Phường Long Phước",
+    "phuong tan quy": {
+      new: ["Phường Tân Sơn Nhì", "Phường Phú Thọ Hòa"],
+      note: "Phường Tân Quý chia 2 phần theo NQ 1685"
+    },
+    "phuong tan thanh": {
+      new: ["Phường Tân Sơn Nhì", "Phường Phú Thọ Hòa", "Phường Tân Phú"],
+      note: "Phường Tân Thành chia 3 phần theo NQ 1685"
+    },
+    "phuong phu tho hoa": "Phường Phú Thọ Hòa",
+    "phuong phu trung": "Phường Tân Phú", "phuong hoa thanh": "Phường Tân Phú",
+    "phuong tan thoi hoa": {
+      new: ["Phường Tân Phú", "Phường Phú Thạnh"],
+      note: "Phường Tân Thới Hòa chia 2 phần theo NQ 1685"
+    },
+    "phuong hiep tan": "Phường Phú Thạnh", "phuong phu thanh": "Phường Phú Thạnh",
+    "phuong hiep binh chanh": "Phường Hiệp Bình", "phuong hiep binh phuoc": "Phường Hiệp Bình", 
+    "phuong linh dong": {
+      new: ["Phường Hiệp Bình", "Phường Thủ Đức"],
+      note: "Phường Linh Đông chia 2 phần theo NQ 1685"
+    },
+    "phuong binh tho": "Phường Thủ Đức", "phuong linh chieu": "Phường Thủ Đức", "phuong truong tho": "Phường Thủ Đức",
+    "phuong linh tay": {
+      new: ["Phường Thủ Đức", "Phường Linh Xuân"],
+      note: "Phường Linh Tây chia 2 phần theo NQ 1685"
+    },
+    "phuong binh chieu": "Phường Tam Bình", "phuong tam phu": "Phường Tam Bình", "phuong tam binh": "Phường Tam Bình",
+    "phuong linh trung": "Phường Linh ", "phuong linh xuan": "Phường Linh Xuân",
+    "phuong tan phu (tp.thu duc)": "Phường Tăng Nhơn Phú", "phuong tang nhon phu A": "Phường Tăng Nhơn Phú", "phuong tang nhon phu B": "Phường Tăng Nhơn Phú", "phuong hiep phu": "Phường Tăng Nhơn Phú",
+    "phuong long thanh my": {
+      new: ["Phường Tăng Nhơn Phú", "Phường Long Bình"],
+      note: "Phường Long Thạnh Mỹ chia 2 phần theo NQ 1685"
+    },
+    "phuong long binh": "Phường Long Bình",
+    "phuong truong thanh": "Phường Long Phước", "phuong long phuoc": "Phường Long Phước",
+    "phuong phu huu": "Phường Long Trường", "phuong long truong": "Phường Long Trường",
+    "phuong thanh my loi": "Phường Cát Lái", "phuong cat lai": "Phường Cát Lái",
+    "phuong binh trung dong": "Phường Bình Trưng", "phuong binh trung tay": "Phường Bình Trưng",
+    // "phuong an phu (tp.thu duc)": {
+    //   new: ["Phường Bình Trưng", "Phường An Khánh"],
+    //   note: "Phường An Phú (thành phố Thủ Đức) chia 2 phần theo NQ 1685"
+    // },
+    "phuong phuoc binh": "Phường Phước Long", "phuong phuoc long a": "Phường Phước Long", "phuong phuoc long b": "Phường Phước Long",
+    "phuong thu thiem": "Phường An Khánh", "phuong an loi dong": "Phường An Khánh", "phuong thao dien": "Phường An Khánh", "phuong an khanh": "Phường An Khánh",  
 };
 
 const resultBox = document.getElementById("result");
+const countBadge = document.getElementById("countBadge");
+const noteTip = document.getElementById("noteTip");
 
 function removeVietnameseTones(str) {
   return str.normalize("NFD")                        // tách chữ và dấu
@@ -48,25 +205,41 @@ function removeVietnameseTones(str) {
         
 };
 
+function formatKetQua(obj){
+  if (!obj) return "Không tìm thấy";
+  let arr = [];
+  let note = "";
+  if (Array.isArray(obj)) {
+    arr = obj;
+  } else if (typeof obj === "string") {
+    arr = [obj];
+  } else if (typeof obj === "object" && obj.new) {
+    arr = obj.new;
+    note = obj.note || "";
+  }
+  const header = arr.length > 1 ? `Tìm thấy ${arr.length} phương án:` : "Địa chỉ mới:";
+  let body = arr.length > 1 
+    ? `<ul>${arr.map(x=>`<li>${x}</li>`).join("")}</ul>` 
+    : arr[0] || "";
+  return header + "<br>" + body /*+ (note?`<br><em>(i) ${note}</em>`:"")*/;
+}
+
 document.getElementById("btnSearch").addEventListener("click", function() {
   let diachicu = document.getElementById("inputCu").value;
   let dulieu = removeVietnameseTones(diachicu.trim());
   let ketqua = data[dulieu];
 
-  function formatKetQua(x) {
-  if (Array.isArray(x)) 
-    return "Có thể là:\n• " + x.join("\n• ");
-    return "Địa chỉ mới: " + x;
-  }
+  resultBox.innerHTML = ketqua ? formatKetQua(ketqua) : "Không tìm thấy";
+  resultBox.style.display = "block";
 
-  if (ketqua) {
-    resultBox.innerText = ketqua ? formatKetQua(ketqua) : "Không tìm thấy";
-    resultBox.style.display = "block";
-  }
-  else {
-    resultBox.innerText = "Không tìm thấy";
-    resultBox.style.display = "block";
-  }
+  if(ketqua && typeof ketqua === "object"){
+    const len = (ketqua.new||[]).length;
+    if(len>0){ countBadge.style.display="inline-block"; countBadge.textContent = `${len} kết quả`; } else { countBadge.style.display="none"; }
+    if(ketqua.note){ noteTip.style.display="inline-block"; noteTip.title = ketqua.note; } else { noteTip.style.display="none"; }
+  } else  {
+      countBadge.style.display="none";
+      noteTip.style.display="none";
+    }
 });
 
 document.getElementById("inputCu").addEventListener("keydown", function(event) {
@@ -74,7 +247,4 @@ document.getElementById("inputCu").addEventListener("keydown", function(event) {
     document.getElementById("btnSearch").click();
   }
 });
-
-
-resultBox.innerText = ketqua ? formatKetQua(ketqua) : "Không tìm thấy";
 

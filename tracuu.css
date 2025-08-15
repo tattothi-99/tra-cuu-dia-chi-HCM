@@ -1,7 +1,9 @@
 body {
+    padding: 0;
+    /* background-color: rgb(179, 221, 255); */
     background-image: url("ban-do-tphcm-sau-sap-nhap.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -13,34 +15,42 @@ h1 {
 
 h3 {
     text-align: center;
+    margin-bottom: 40px;
 }
 
-.title1 {
-    font-size: 25px;
-    font-weight: bold;
+.card {
+    background:rgb(209, 234, 255);
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+    padding:16px;
+    box-shadow:0 1px 2px rgba(0,0,0,.04);
+    margin-top: 20px;
 }
 
-.title2 {
+.title {
+    margin-top: 0;
     font-size: 25px;
     font-weight: bold;
 }
 
 #inputCu {
-    background: transparent;
+    /* background: transparent; */
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 24px;
+    padding: 5px 10px;
+    height: 25px;
     width: 592px;
     font-size: 20px;
 }
 
 #inputMoi {
-    background: transparent;
+    /* background: transparent; */
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 24px;
+    padding: 5px 10px;
+    height: 25px;
     width: 592px;
     font-size: 20px;
 }
@@ -105,11 +115,13 @@ h3 {
 
 .atcp-box {
     max-height: 200px;
+    width: 615px;
     overflow-y: scroll;
 }
 
 .atcp-box2 {
     max-height: 200px;
+    width: 615px;
     overflow-y: scroll;
 }
 
@@ -123,6 +135,7 @@ h3 {
     display: block;
     margin-left: auto;  
     margin-right: auto;
+    border-radius: 2px;
 }
 
 #btnSearch2 {
@@ -135,6 +148,7 @@ h3 {
     display: block;
     margin-left: auto;  
     margin-right: auto;
+    border-radius: 2px;
 }
 
 
@@ -148,6 +162,25 @@ h3 {
     cursor: pointer;
 }
 
+.tip {
+    display: none;
+    margin-left: 8px;
+    cursor: help;
+}
+
+.tip::after {
+    content: "ℹ️";
+    font-size: 16px;
+    margin-left: 4px;
+}
+
+.meta {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 #result {
     margin: 40px 20px 40px 20px;
     font-size: 30px;
@@ -156,9 +189,10 @@ h3 {
     border: 2px solid darkgreen;
     background-color: whitesmoke;
     width: max-content; 
-    padding: 5px 10px 5px 10px;
+    padding: 3px 6px 3px 6px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 2px;
 }
 
 #result2 {
@@ -170,10 +204,10 @@ h3 {
     background-color: whitesmoke;
     width: max-content;
     max-width: 90%; 
-    padding: 5px 10px 5px 10px;
+    padding: 3px 6px 3px 6px;
     margin-left: auto;
     margin-right: auto;
-    /* margin-bottom: 70px; */
+    border-radius: 2px;
 }
 
 .footer {
@@ -181,32 +215,26 @@ h3 {
     left: 0;
     bottom: 0;
     width: 100%;
-    background: rgb(177, 220, 236);
+    background: rgb(230, 244, 255);
     text-align: center;
     padding: 10px 0;
     border: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     body{
-        background-image: url("(2)ban-do-tphcm-sau-sap-nhap.jpg");
+        background-image: url("2-ban-do-tphcm-sau-sap-nhap.jpg");
         background-size: cover;
         background-repeat: no-repeat;
+    }
+    h1 {
+        font-size: 40px;
     }
     #inputCu {
         width: 90%;
     }
     #inputMoi {
         width: 90%;
-    }
-    #btnSearch {
-        width: 80%;
-    }
-    #btnSearch2 {
-        width: 80%;
-    }
-    h1 {
-        font-size: 40px;
     }
     .search-box {
         width: 90%;
@@ -216,10 +244,12 @@ h3 {
     }
     #btnSearch {
         width: 80px;
+        font-size: 95%;
         margin-bottom: 20px;
     }
     #btnSearch2 {
         width: 80px;
+        font-size: 95%;
         margin-bottom: 20px;
     }
     #result {
