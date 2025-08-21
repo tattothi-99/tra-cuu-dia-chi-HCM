@@ -1,4 +1,5 @@
 let availableKeywords = [
+    //TP.HCM  
     "Phường Bến Nghé",
     "Phường Nguyễn Thái Bình",
     "Phường Đa Kao",
@@ -21,13 +22,12 @@ let availableKeywords = [
     "Phường 2 Quận 6", "Phường 9 Quận 6",
     "Phường 1 Quận 6", "Phường 7 Quận 6", "Phường 8 Quận 6",
     "Phường 10 Quận 6", "Phường 11 Quận 6",
-    "Phường 16 Quận 6",
     "Phường 12 Quận 6", "Phường 13 Quận 6", "Phường 14 Quận 6",
     "Phường Bình Thuận", "Phường Tân Thuận Đông", "Phường Tân Thuận Tây",
     "Phường Phú Thuận Quận 7",
     "Phường Phú Mỹ Quận 7",
     "Phường Tân Phú Quận 7",
-    "Phường Tân Phong", "Phường Tân Quy", "Phường Tân Kiểng", "Phường Tân Hưng",
+    "Phường Tân Phong", "Phường Tân Quý Quận 7", "Phường Tân Kiểng", "Phường Tân Hưng",
     "Phường 4 Quận 8", "Phường Rạch Ông", "Phường Hưng Phú",
     "Phường 5 Quận 8",
     "Phường 14 Quận 8", "Phường 15 Quận 8", "Phường Xóm Củi",
@@ -79,10 +79,9 @@ let availableKeywords = [
     "Phường 10 Quận Tân Bình", "Phường 11 Quận Tân Bình", "Phường 12 Quận Tân Bình",
     "Phường 13 Quận Tân Bình", "Phường 14 Quận Tân Bình",
     "Phường 15 Quận Tân Bình",
-    "Phường Tây Thạnh", 
-    "Phường Sơn Kỳ",
+    "Phường Tây Thạnh",
     "Phường Tân Sơn Nhì",
-    "Phường Tân Quý", 
+    "Phường Tân Quý Quận Tân Phú", 
     "Phường Tân Thành",
     "Phường Phú Thọ Hòa",
     "Phường Phú Trung", "Phường Hòa Thạnh",
@@ -101,38 +100,115 @@ let availableKeywords = [
     "Phường Phú Hữu", "Phường Long Trường",
     "Phường Thạnh Mỹ Lợi", "Phường Cát Lái",
     "Phường Bình Trưng Đông", "Phường Bình Trưng Tây",
+    "Phường An Phú (TP.Thủ Đức)",
     "Phường Phước Bình", "Phường Phước Long A", "Phường Phước Long B",
     "Phường Thủ Thiêm", "Phường An Lợi Đông", "Phường Thảo Điền", "Phường An Khánh",
+    "Xã Vĩnh Lộc A",
+    "Xã Phạm Văn Hai",
+    "Xã Vĩnh Lộc B",
+    "Xã Lê Minh Xuân", "Xã Bình Lợi",
+    "Thị trấn Tân Túc", "Xã Tân Nhựt",
+    "Xã Tân Quý Tây", "Xã Bình Chánh", "Xã An Phú Tây",
+    "Xã Đa Phước", "Xã Hưng Long", "Xã Qui Đức",
+    "Xã Phong Phú", "Xã Bình Hưng",
+    "Xã Tam Thôn Hiệp", "Xã Bình Khánh",
+    "Xã An Thới Đông", 
+    "Xã Lý Nhơn",
+    "Xã Long Hòa (huyện Cần Giờ)", "Thị trấn Cần Thạnh",
+    "Xã Tân Phú Trung", "Xã Tân Thông Hội", "Xã Phước Vĩnh An",
+    "Thị trấn Củ Chi", "Xã Phước Hiệp", "Xã Tân An Hội",
+    "Xã Trung Lập Thượng", "Xã Phước Thạnh", "Xã Thái Mỹ",
+    "Xã Phú Mỹ Hưng", "Xã An Phú", "Xã An Nhơn Tây",
+    "Xã Phạm Văn Cội", "Xã Trung Lập Hạ", "Xã Nhuận Đức",
+    "Xã Tân Thạnh Tây", "Xã Tân Thạnh Đông", "Xã Phú Hòa Đông",
+    "Xã Bình Mỹ (huyện Củ Chi)", "Xã Hòa Phú", "Xã Trung An",
+    "Xã Thới Tam Thôn", "Xã Nhị Bình", "Xã Đông Thạnh",
+    "Xã Tân Hiệp (huyện Hóc Môn)", "Xã Tân Xuân", "Thị trấn Hóc Môn",
+    "Xã Tân Thới Nhì", "Xã Xuân Thới Đông", "Xã Xuân Thới Sơn",
+    "Xã Xuân Thới Thượng", "Xã Trung Chánh", "Xã Bà Điểm",
+    "Thị trấn Nhà Bè", "Xã Phú Xuân", "Xã Phước Kiển", "Xã Phước Lộc",
+    "Xã Nhơn Đức", "Xã Long Thới", "Xã Hiệp Phước",
+    
+    "Xã Thạnh An"
 ];
 
 const atcpBox = document.querySelector(".atcp-box");
 const nhaplieu = document.getElementById("inputCu");
 
-nhaplieu.onkeyup = function() {
+let currentFocus = -1;
+
+nhaplieu.onkeyup = function(e) {
+    if (["ArrowUp", "ArrowDown", "Enter"].includes(e.key)) return;
+
     let atcpRS = [];
     let input = nhaplieu.value;
     if (input.length) {
         atcpRS = availableKeywords.filter((keyword) => {
           return keyword.toLowerCase().includes(input.toLowerCase())
         });
-        // console.log(atcpRS);
     }
     display(atcpRS);
 
     if (!atcpRS.length) {
         atcpBox.innerHTML = "";
     }
+
+    currentFocus = -1;
+};
+
+nhaplieu.onkeydown = function(e) {
+    let items = atcpBox.querySelectorAll("li");
+    if (!items.length) return;
+
+    if (e.key === "ArrowDown") {
+        currentFocus++;
+        if (currentFocus >= items.length) currentFocus = 0;
+        addActive(items);
+        e.preventDefault();
+    } else if (e.key === "ArrowUp") {
+        currentFocus--;
+        if (currentFocus < 0) currentFocus = items.length - 1;
+        addActive(items);
+        e.preventDefault();
+    } else if (e.key === "Enter") {
+        if (currentFocus > -1) {
+            items[currentFocus].click();
+            e.preventDefault();
+        }
+    }
 };
 
 function display(atcpRS) {
     const content = atcpRS.map((list) => {
-        return "<li onclick = selectInput(this)>" + list + "</li>";
+        return "<li>" + list + "</li>";
     });
 
     atcpBox.innerHTML = "<ul>" + content.join(" ") + "</ul>"
+
+    let items = atcpBox.querySelectorAll("li");
+    items.forEach(item => {
+        item.onclick = function() {
+            selectInput(this);
+        }
+    });
 };
+
+function addActive(items) {
+    if (!items) return;
+    removeActive(items);
+    if (currentFocus >= items.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = items.length - 1;
+    items[currentFocus].classList.add("autocomplete-active");
+    items[currentFocus].scrollIntoView({block: "nearest"});
+}
+
+function removeActive(items) {
+    items.forEach(item => item.classList.remove("autocomplete-active"));
+}
 
 function selectInput(list) {
     nhaplieu.value = list.innerHTML;
     atcpBox.innerHTML = "";
+    tracuuCu();
+    currentFocus = -1;
 };

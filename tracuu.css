@@ -20,10 +20,10 @@ h3 {
 
 .card {
     background:rgb(209, 234, 255);
-    border:1px solid #e5e7eb;
-    border-radius:12px;
-    padding:16px;
-    box-shadow:0 1px 2px rgba(0,0,0,.04);
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.04);
     margin-top: 20px;
 }
 
@@ -33,71 +33,38 @@ h3 {
     font-weight: bold;
 }
 
-#inputCu {
+#inputCu, #inputMoi {
     /* background: transparent; */
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding: 5px 10px;
     height: 25px;
-    width: 592px;
+    width: 100%;
+    box-sizing: border-box;
     font-size: 20px;
 }
 
-#inputMoi {
-    /* background: transparent; */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px 10px;
-    height: 25px;
-    width: 592px;
-    font-size: 20px;
-}
-
-.search-box {
-    width: 600px;
+.search-box, .search-box2 {
+    max-width: 600px;
+    width: 90%;
     background: #fff;
-    margin: 0px auto 0;
+    margin: 0 auto;
+    position: relative;
 }
 
-.search-box2 {
-    width: 600px;
-    background: #fff;
-    margin: 0px auto 0;
-}
-
-.row {
+.row, .row2 {
     display: blog;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
 }
 
-.row2 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-}
-
-.atcp-box ul {
+.atcp-box ul, .atcp-box2 ul {
     padding: 0px 10px;
 }
 
-.atcp-box2 ul {
-    padding: 0px 10px;
-}
-
-.atcp-box ul li {
-    font-size: 20px;
-    list-style: none;
-    border-radius: 3px;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-.atcp-box2 ul li {
+.atcp-box ul li, .atcp-box2 ul li {
     font-size: 20px;
     list-style: none;
     border-radius: 3px;
@@ -113,19 +80,18 @@ h3 {
     background: white;
 }
 
-.atcp-box {
+.atcp-box, .atcp-box2 {
     max-height: 200px;
-    width: 615px;
-    overflow-y: scroll;
+    width: 100%;
+    overflow-y: auto;
 }
 
-.atcp-box2 {
-    max-height: 200px;
-    width: 615px;
-    overflow-y: scroll;
+.autocomplete-active {
+    background: #e0e0e0;
+    color: #333;
 }
 
-#btnSearch {
+#btnSearch, #btnSearch2 {
     background-color: green;
     color: white;
     font-size: 20px;
@@ -137,20 +103,6 @@ h3 {
     margin-right: auto;
     border-radius: 2px;
 }
-
-#btnSearch2 {
-    background-color: green;
-    color: white;
-    font-size: 20px;
-    height: 30px;
-    width: 110px;
-    margin-top: 30px;
-    display: block;
-    margin-left: auto;  
-    margin-right: auto;
-    border-radius: 2px;
-}
-
 
 #btnSearch:hover {
     background-color: darkgreen;
@@ -181,30 +133,16 @@ h3 {
     gap: 8px;
 }
 
-#result {
-    margin: 40px 20px 40px 20px;
+#result, #result2 {
+    margin: 40px 20px;
     font-size: 30px;
     font-weight: bold; 
     color: green; 
     border: 2px solid darkgreen;
     background-color: whitesmoke;
     width: max-content; 
-    padding: 3px 6px 3px 6px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 2px;
-}
-
-#result2 {
-    margin: 40px 20px 40px 20px;
-    font-size: 30px;
-    font-weight: bold; 
-    color: green; 
-    border: 2px solid darkgreen;
-    background-color: whitesmoke;
-    width: max-content;
-    max-width: 90%; 
-    padding: 3px 6px 3px 6px;
+    max-width: 90%;
+    padding: 3px 6px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 2px;
@@ -230,39 +168,27 @@ h3 {
     h1 {
         font-size: 40px;
     }
-    #inputCu {
+    #inputCu, #inputMoi {
         width: 90%;
     }
-    #inputMoi {
+    .search-box, .search-box2 {
         width: 90%;
     }
-    .search-box {
-        width: 90%;
+    .atcp-box, .atcp-box2 {
+        overflow-y: auto;
     }
-    .search-box2 {
-        width: 90%;
+    .atcp-box ul li, .atcp-box2 ul li {
+        font-size: 90%;
     }
-    #btnSearch {
+    #btnSearch, #btnSearch2 {
         width: 80px;
         font-size: 95%;
         margin-bottom: 20px;
     }
-    #btnSearch2 {
-        width: 80px;
-        font-size: 95%;
-        margin-bottom: 20px;
-    }
-    #result {
+    #result, #result2 {
         max-width: 90%;
         font-size: 20px;
         word-wrap: break-word;
         margin: auto;
-    }
-    #result2 {
-        max-width: 90%;
-        font-size: 20px;
-        word-wrap: break-word;
-        margin: auto;
-        /* margin-bottom: 60px; */
     }
 }

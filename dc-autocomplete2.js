@@ -1,4 +1,5 @@
 let availableKeywords2 = [
+    //TP.HCM
     "Phường Sài Gòn",
     "Phường Tân Định",
     "Phường Bến Thành",
@@ -77,12 +78,42 @@ let availableKeywords2 = [
     "Phường Bình Trung",
     "Phường Phước Long",
     "Phường An Khánh",
+
+    "Xã Vĩnh Lộc",
+    "Xã Tân Vĩnh Lộc", 
+    "Xã Bình Lợi", 
+    "Xã Tân Nhựt",
+    "Xã Bình Chánh",
+    "Xã Hưng Long",
+    "Xã Bình Hưng",
+    "Xã Bình Khánh",
+    "Xã An Thới Đông",
+    "Xã Cần Giờ",
+    "Xã Củ Chi",
+    "Xã Tân An Hội",
+    "Xã Thái Mỹ",
+    "Xã An Nhơn Tây",
+    "Xã Nhuận Đức",
+    "Xã Phú Hòa Đông",
+    "Xã Bình Mỹ",
+    "Xã Đông Thạnh",
+    "Xã Hóc Môn",
+    "Xã Xuân Thới Sơn",
+    "Xã Bà Điểm",
+    "Xã Nhà Bè",
+    "Xã Hiệp Phước",
+    
+    "Xã Thạnh An"
 ];
 
 const atcpBox2 = document.querySelector(".atcp-box2");
 const nhaplieu2 = document.getElementById("inputMoi");
 
-nhaplieu2.onkeyup = function() {
+let currentFocus2 = -1;
+
+nhaplieu2.onkeyup = function(e) {
+    if (["ArrowUp", "ArrowDown", "Enter"].includes(e.key)) return;
+
     let atcpRS2 = [];
     let input2 = nhaplieu2.value;
     if (input2.length) {
@@ -95,17 +126,62 @@ nhaplieu2.onkeyup = function() {
     if (!atcpRS2.length) {
         atcpBox2.innerHTML = " ";
     }
+    currentFocus2 = -1;
+};
+
+nhaplieu2.onkeydown = function(e) {
+    let items2 = atcpBox2.querySelectorAll("li");
+    if (!items2.length) return;
+
+    if (e.key === "ArrowDown") {
+        currentFocus2++;
+        if (currentFocus2 >= items2.length) currentFocus2 = 0;
+        addActive2(items2);
+        e.preventDefault();
+    } else if (e.key === "ArrowUp") {
+        currentFocus2--;
+        if (currentFocus2 < 0) currentFocus2 = items2.length - 1;
+        addActive2(items2);
+        e.preventDefault();
+    } else if (e.key === "Enter") {
+        if (currentFocus2 > -1) {
+            items2[currentFocus2].click();
+            e.preventDefault();
+        }
+    }
 };
 
 function display2(atcpRS2) {
     const content2 = atcpRS2.map((list) => {
-        return "<li onclick='selectInput2(this)'>" + list + "</li>";
+        return "<li>" + list + "</li>";
     });
 
     atcpBox2.innerHTML = "<ul>" + content2.join(" ") + "</ul>";
+
+    let items2 = atcpBox2.querySelectorAll("li");
+    items2.forEach(item => {
+        item.onclick = function() {
+            selectInput2(this);
+        }
+    });
+}
+
+function addActive2(items2) {
+    if (!items2) return;
+    removeActive2(items2);
+    if (currentFocus2 >= items2.length) currentFocus2 = 0;
+    if (currentFocus2 < 0) currentFocus2 = items2.length - 1;
+    items2[currentFocus2].classList.add("autocomplete-active");
+    items2[currentFocus2].scrollIntoView({block: "nearest"});
+}
+
+function removeActive2(items2) {
+    items2.forEach(item => item.classList.remove("autocomplete-active"));
 }
 
 function selectInput2(list) {
     nhaplieu2.value = list.innerHTML;
-    atcpBox2.innerHTML = " ";
+    atcpBox2.innerHTML = "";
+    tracuuMoi();
+    currentFocus2 = -1;
 }
