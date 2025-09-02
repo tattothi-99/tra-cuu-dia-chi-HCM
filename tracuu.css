@@ -1,21 +1,35 @@
 body {
     padding: 0;
-    /* background-color: rgb(179, 221, 255); */
-    background-image: url("ban-do-tphcm-sau-sap-nhap.jpg");
+    background-image: url("tphcm-istockphoto.jpg");
     background-size: cover;
     /* background-repeat: no-repeat; */
     font-family: 'Times New Roman', Times, serif;
 }
 
 h1 {
-    color: rgb(3, 3, 100);
+    color: rgb(4, 4, 125);
+    /* color: rgb(255, 140, 0); */
+    text-shadow: 2px 2px 5px gray;
     font-size: 50px;
     text-align: center;
+}
+
+h2 {
+    color: rgb(255, 248, 169); 
+    text-shadow: 2px 2px 5px gray;
+    margin-bottom: 8px;
 }
 
 h3 {
     text-align: center;
     margin-bottom: 40px;
+}
+
+.hdsd {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: white
 }
 
 .card {
@@ -28,9 +42,26 @@ h3 {
 }
 
 .title {
-    margin-top: 0;
-    font-size: 25px;
+    color: rgb(7, 17, 79);
+    font-size: 30px;
     font-weight: bold;
+    text-shadow: 2px 2px 5px gray;
+    margin-top: 0;
+}
+
+.search-box, .search-box2 {
+    max-width: 600px;
+    width: 90%;
+    background: #fff;
+    margin: 0 auto;
+    position: relative;
+}
+
+.row, .row2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
 }
 
 #inputCu, #inputMoi {
@@ -43,21 +74,6 @@ h3 {
     width: 100%;
     box-sizing: border-box;
     font-size: 20px;
-}
-
-.search-box, .search-box2 {
-    max-width: 600px;
-    width: 90%;
-    background: #fff;
-    margin: 0 auto;
-    position: relative;
-}
-
-.row, .row2 {
-    display: blog;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
 }
 
 .atcp-box ul, .atcp-box2 ul {
@@ -160,16 +176,26 @@ h3 {
 }
 
 @media (max-width: 700px) {
-    body{
-        background-image: url("2-ban-do-tphcm-sau-sap-nhap.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
     h1 {
         font-size: 40px;
     }
+    h3 {
+        font-size: 18px;
+    }
+    #huongdan {
+        h2 {
+            font-size: 22px;
+        }
+        .hdsd {
+            font-size: 16px;
+            word-wrap: break-word;
+        }
+    }
+    .title {
+        font-size: 25px;
+    }
     #inputCu, #inputMoi {
-        width: 90%;
+        width: 100%;
     }
     .search-box, .search-box2 {
         width: 90%;

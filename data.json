@@ -173,7 +173,7 @@
     },
     "phuong binh chieu": "Phường Tam Bình", "phuong tam phu": "Phường Tam Bình", "phuong tam binh": "Phường Tam Bình",
     "phuong linh trung": "Phường Linh Xuân", "phuong linh xuan": "Phường Linh Xuân",
-    "phuong tan phu (tp.thu duc)": "Phường Tăng Nhơn Phú", "phuong tang nhon phu A": "Phường Tăng Nhơn Phú", "phuong tang nhon phu B": "Phường Tăng Nhơn Phú", "phuong hiep phu": "Phường Tăng Nhơn Phú",
+    "phuong tan phu tp thu duc": "Phường Tăng Nhơn Phú", "phuong tang nhon phu A": "Phường Tăng Nhơn Phú", "phuong tang nhon phu B": "Phường Tăng Nhơn Phú", "phuong hiep phu": "Phường Tăng Nhơn Phú",
     "phuong long thanh my": {
       "new": ["Phường Tăng Nhơn Phú", "Phường Long Bình"],
       "note": "Phường Long Thạnh Mỹ chia 2 phần theo NQ 1685"
@@ -183,12 +183,12 @@
     "phuong phu huu": "Phường Long Trường", "phuong long truong": "Phường Long Trường",
     "phuong thanh my loi": "Phường Cát Lái", "phuong cat lai": "Phường Cát Lái",
     "phuong binh trung dong": "Phường Bình Trưng", "phuong binh trung tay": "Phường Bình Trưng",
-    "phuong an phu (tp.thu duc)": {
+    "phuong an phu tp thu duc": {
       "new": ["Phường Bình Trưng", "Phường An Khánh"],
       "note": "Phường An Phú (thành phố Thủ Đức) chia 2 phần theo NQ 1685"
     },
     "phuong phuoc binh": "Phường Phước Long", "phuong phuoc long a": "Phường Phước Long", "phuong phuoc long b": "Phường Phước Long",
-    "phuong thu thiem": "Phường An Khánh", "phuong an loi dong": "Phường An Khánh", "phuong thao dien": "Phường An Khánh", "phuong an khanh": "Phường An Khánh", 
+    "phuong thu thiem": "Phường An Khánh", "phuong an loi dong": "Phường An Khánh", "phuong thao dien": "Phường An Khánh", "phuong an khanh": "Phường An Khánh",
     
     
     "xa vinh loc a": "Xã Vĩnh Lộc", 
@@ -223,5 +223,110 @@
     "thi tran nha be": "Xã Nhà Bè", "xa phu xuan": "Xã Nhà Bè", "xa phuoc kien": "Xã Nhà Bè", "xa phuoc loc": "Xã Nhà Bè",
     "xa nhon duc": "Xã Hiệp Phước", "xa long thoi": "Xã Hiệp Phước", "xa hiep phuoc": "Xã Hiệp Phước",
 
-   "xa thanh an": "Xã Thạnh An (Không sáp nhập)"
+    "xa thanh an": "Xã Thạnh An (Không sáp nhập)",
+
+
+
+  "_note2": "Bình Dương", 
+    
+    "phuong binh an": "Phường Đông Hòa", "phuong binh thang": "Phường Đông Hòa", "phuong dong hoa": "Phường Đông Hòa",
+    "phuong an binh": "Phường Dĩ An", "phuong di an": "Phường Dĩ An",
+    "phuong tan dong hiep": {
+      "new": ["Phường Dĩ An", "Phường Tân Đông Hiệp"],
+      "note": "Tân Đông Hiệp chia 2 phần theo NQ 1685"
+    },
+    "phuong tan binh": "Phường Tân Đông Hiệp",
+    "phuong thai hoa": {
+      "new": ["Phường Tân Đông Hiệp", "Phường Tân Khánh"],
+      "note":"Thái Hòa chia 2 phần theo NQ 1685"
+    },
+    "phuong an phu tp thuan an": "Phường An Phú",
+    "phuong binh chuan": {
+      "new": ["Phường An Phú", "Phường Thuận Giao"],
+      "note": "Bình Chuẩn chia 2 phần theo NQ 1685"
+    },
+    "phuong thuan giao": "Phường Thuận Giao",
+    "phuong binh hoa": "Phường Bình Hòa",
+    "phuong vinh phu": {
+      "new": ["Phường Bình Hòa", "Phường Lái Thiêu"],
+      "note": "Vĩnh Phú chia 2 phần theo NQ 1685"
+    },
+    "phuong binh nham": "Phường Lái Thiêu", "phuong lai thieu": "Phường Lái Thiêu",
+    "phuong hung dinh": "Phường Thuận An", "phuong an thanh": "Phường Thuận An", "xa an son": "Phường Thuận An",
+    "phuong phu cuong": "Phường Thủ Dầu Một", "phuong phu tho": "Phường Thủ Dầu Một", "phuong chanh nghia": "Phường Thủ Dầu Một",
+    "phuong hiep thanh tp thu dau mot": {
+      "new": ["Phường Thủ Dầu Một", "Phường Phú Lợi"],
+      "note": "Hiệp Thành chia 2 phần theo NQ 1685"
+    },
+    "phuong chanh my": {
+      "new": ["Phường Thủ Dầu Một", "Phường Chánh Hiệp"],
+      "note": "Chánh Mỹ chia 2 phần theo NQ 1685"
+    },
+    "phuong dinh hoa": "Phường Chánh Hiệp", "phuong tuong binh hiep": "Phường Chánh Hiệp",
+    "phuong hiep an": {
+      "new": ["Phường Chánh Hiệp", "Phường Phú An"],
+      "note": "Hiệp An chia 2 phần theo NQ 1685"
+    },
+    "phuong tan an": "Phường Phú An", "xa phu an": "Phường Phú An",
+    "phuong phu hoa": "Phường Phú Lợi", "phuong phu loi": "Phường Phú Lợi",
+    "phuong phu my tp thu dau mot": "Phường Bình Dương", "phuong hoa phu": "Phường Bình Dương", "phuong phu tan": "Phường Bình Dương", "phuong phu chanh": "Phường Bình Dương",
+    "phuong tan dinh tp ben cat": "Phường Hòa Lợi", "phuong hoa loi": "Phường Hòa Lợi",
+    "phuong an tay": "Phường Tây Nam", 
+    "xa an lap": {
+      "new": ["Phường Tây Nam", "Xã Thanh An"],
+      "note": "Thanh Tuyền chia 2 phần theo NQ 1685"
+    },
+    "phuong thanh tuyen": {
+      "new": ["Phường Tây Nam", "Xã Thanh An"],
+      "note": "Thanh Tuyền chia 2 phần theo NQ 1685"
+    }, 
+    "phuong an dien": "Phường Long Nguyên", "xa long nguyen": "Phường Long Nguyên",
+    "phuong my phuoc": {
+      "new": ["Phường Long Nguyên", "Phường Bến Cát"],
+      "note": "Mỹ Phước chia 2 phần theo NQ 1685"
+    },
+    "xa tan hung (huyen bau bang)": "Phường Bến Cát", "xa lai hung": "Phường Bến Cát",
+    "phuong chanh phu hoa": "Phường Chánh Phú Hòa", "xa hung hoa": "Phường Chánh Phú Hòa",
+    "phuong vinh tan": "Phường Vĩnh Tân", "thi tran tan binh": "Phường Vĩnh Tân",
+    "xa binh my (huyen bac tan uyen)": "Phường Bình Cơ", "phuong hoi nghia": "Phường Bình Cơ",
+    "phuong uyen hung": "Phường Tân Uyên", "xa bach dang": "Phường Tân Uyên", "xa tan lap": "Phường Tân Uyên",
+    "xa tan my": {
+      "new": ["Phường Tân Uyên", "Xã Thường Tân"],
+      "note": "Tân Mỹ chia 2 phần theo NQ 1685"
+    },
+    "phuong khanh binh": "Phường Tân Hiệp", "phuong tan hiep": "Phường Tân Hiệp",
+    "phuong thanh phuoc": "Phường Tân Khánh", "phuong tan phuoc khanh": "Phường Tân Khánh", "phuong tan vinh hiep": "Phường Tân Khánh", "xa thanh hoi": "Phường Tân Khánh",
+
+    
+    "xa lac an": "Xã Thường Tân", "xa hieu liem": "Xã Thường Tân", "xa thuong tan": "Xã Thường Tân",
+    "thi tran tan thanh": "Xã Bắc Tân Uyên", "xa dat cuoc": "Xã Bắc Tân Uyên", "xa tan dinh": "Xã Bắc Tân Uyên",
+    "thi tran phuoc vinh": "Xã Phú Giáo", "xa an binh": "Xã Phú Giáo",
+    "xa tam lap": {
+      "new": ["Xã Phú Giáo", "Xã Phước Hòa"],
+      "note": "Tam  chia 2 phần theo NQ 1685"
+    },
+    "xa vinh hoa": "Xã Phước Hòa", "xa phuoc hoa": "Xã Phước Hòa", 
+    "xa tan hiep huyen phu giao": "Xã Phước Thành", "xa an thai": "Xã Phước Thành", "xa phuoc sang": "Xã Phước Thành",
+    "xa an linh": "Xã An Long", "xa tan long": "Xã An Long", "xa an long": "Xã An Long",
+    "xa tru van tho": "Xã Trừ Văn Thố", "xa cay truong ii": "Xã Trừ Văn Thố", 
+    "thi tran lai uyen": {
+      "new": ["Xã Trừ Văn Thố", "Xã Bàu Bàng"],
+      "note": "Thị trấn Lai Uyên chia 2 phần theo NQ 1685"
+    },
+    "xa long tan": "Xã Long Hòa", "xa long hoa huyen dau tieng": "Xã Long Hòa",
+    "xa minh tan": {
+      "new": ["Xã Long Hòa", "Xã Minh Thạnh"],
+      "note": "Minh Tân chia 2 phần theo NQ 1685"
+    },
+    "xa minh thanh": {
+      "new": ["Xã Long Hòa", "Xã Minh Thạnh"],
+      "note": "Minh Thạnh chia 2 phần theo NQ 1685"
+    },
+    "xa minh hoa": "Xã Minh Thạnh", 
+    "xa thanh an binh duong": "Xã Thanh An", 
+    "xa dinh hiep": {
+      "new": ["Xã Thanh An", "Xã Dầu Tiếng"],
+      "note": "Định Hiệp chia 2 phần theo NQ 1685"
+    },
+    "thi tran dau tieng": "Xã Dầu Tiếng", "xa dinh an": "Xã Dầu Tiếng", "xa dinh thanh": "Xã Dầu Tiếng"
 }

@@ -5,19 +5,36 @@ fetch("data.json")
   .then(json => {
     data = json;
   })
-  .catch(err => console.error("Lỗi tải JSON:", err));
+  // .catch(err => console.error("Lỗi tải JSON:", err));
 
 const resultBox = document.getElementById("result");
 const countBadge = document.getElementById("countBadge");
 const noteTip = document.getElementById("noteTip");
 
-function removeVietnameseTones(str) {
-  return str.normalize("NFD")                        // tách chữ và dấu
-            .toLowerCase()                           // chữ thường
-            .replace(/[\u0300-\u036f]/g, "")         // xóa dấu
-            .replace(/đ/g, "d");                     // đ → d
-        
-};
+function normalizeQuery(s){
+  return s
+    // bỏ dấu tiếng Việt
+    .normalize("NFD") 
+    .toLowerCase().trim()
+    .replace(/[\u0300-\u036f]/g,"").replace(/đ/g,"d")
+
+    // GIỮ chữ trong ngoặc, chỉ bỏ ký tự ngoặc + dấu chấm "(tp.thu duc)" -> " tp thu duc "
+    .replace(/[().]/g, " ")
+
+    // mở rộng viết tắt p./q./x./p/q/x đứng MỘT MÌNH (không đụng 'phu', 'quan', 'xa' đầy đủ)
+    .replace(/\b[pP]\.(?=[a-z0-9])/g, " phuong ")
+    .replace(/\b[pP]\b/g, " phuong ")
+    .replace(/\b[qQ]\.(?=[a-z0-9])/g, " quan ")
+    .replace(/\b[qQ]\b/g, " quan ")
+    .replace(/\b[xX]\.(?=\s*[a-z0-9])/g, " xa ")
+    .replace(/\b[xX]\b/g, " xa ")
+
+    // Bỏ 'tp hcm/tphcm'
+    .replace(/\btp\s*hcm\b|\btphcm\b/g, " ")
+
+    // gộp khoảng trắng
+    .replace(/\s+/g, " ").trim();
+}
 
 function formatKetQua(obj){
   if (!obj) return "Không tìm thấy";
@@ -40,7 +57,7 @@ function formatKetQua(obj){
 
 function tracuuCu() {
   let diachicu = document.getElementById("inputCu").value;
-  let dulieu = removeVietnameseTones(diachicu.trim());
+  let dulieu = normalizeQuery(diachicu);
   let ketqua = data[dulieu];
 
   resultBox.innerHTML = ketqua ? formatKetQua(ketqua) : "Không tìm thấy";

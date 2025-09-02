@@ -1,5 +1,6 @@
 let availableKeywords2 = [
     //TP.HCM
+
     "Phường Sài Gòn",
     "Phường Tân Định",
     "Phường Bến Thành",
@@ -103,7 +104,47 @@ let availableKeywords2 = [
     "Xã Nhà Bè",
     "Xã Hiệp Phước",
     
-    "Xã Thạnh An"
+    "Xã Thạnh An",
+
+
+    //Bình Dương
+
+    "Phường Đông Hòa",
+    "Phường Dĩ An",
+    "Phường Tân Đông Hiệp",
+    "Phường An Phú",
+    "Phường Bình Hòa",
+    "Phường Lái Thiêu",
+    "Phường Thuận An",
+    "Phường Thuân Giao",
+    "Phường Thủ Dầu Một",
+    "Phường Phú Lợi",
+    "Phường Chánh Hiệp",
+    "Phường Bình Dương",
+    "Phường Hòa Lợi",
+    "Phường Phú An",
+    "Phường Tây Nam",
+    "Phường Long Nguyên",
+    "Phường Bến Cát",
+    "Phường Chánh Phú Hòa",
+    "Phường Vĩnh Tân",
+    "Phường Bình Cơ",
+    "Phường Tân Uyên",
+    "Phường Tân Hiệp", 
+    "Phường Tân Khánh",
+
+    "Xã Thường Tân",
+    "Xã Bắc Tân Uyên",
+    "Xã Phú Giáo",
+    "Xã Phước Hòa",
+    "Xã Phước Thành",
+    "Xã An Long",
+    "Xã Trừ Văn Thố",
+    "Xã Bàu Bàng",
+    "Xã Long Hòa",
+    "Xã Thanh An (Bình Dương)",
+    "Xã Dầu Tiếng",
+    "Xã Minh Thạnh"
 ];
 
 const atcpBox2 = document.querySelector(".atcp-box2");
@@ -124,7 +165,7 @@ nhaplieu2.onkeyup = function(e) {
     display2(atcpRS2);
 
     if (!atcpRS2.length) {
-        atcpBox2.innerHTML = " ";
+        atcpBox2.innerHTML = "";
     }
     currentFocus2 = -1;
 };
