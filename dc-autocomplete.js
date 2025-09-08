@@ -32,7 +32,7 @@ let availableKeywords = [
     "Phường 5 Quận 8",
     "Phường 14 Quận 8", "Phường 15 Quận 8", "Phường Xóm Củi",
     "Phường 16 Quận 8",
-    "Phường 6 Quận 8", "Xã An Phú Tây Huyện Bình Chánh",
+    "Phường 6 Quận 8", "Xã An Phú Tây (Huyện Bình Chánh)",
     "Phường 7 Quận 8",
     "Phường 6 Quận 10", "Phường 8 Quận 10",
     "Phường 14 Quận 10",
@@ -114,16 +114,16 @@ let availableKeywords = [
     "Xã Tam Thôn Hiệp", "Xã Bình Khánh",
     "Xã An Thới Đông", 
     "Xã Lý Nhơn",
-    "Xã Long Hòa (huyện Cần Giờ)", "Thị trấn Cần Thạnh",
+    "Xã Long Hòa (Huyện Cần Giờ)", "Thị trấn Cần Thạnh",
     "Xã Tân Phú Trung", "Xã Tân Thông Hội", "Xã Phước Vĩnh An",
     "Thị trấn Củ Chi", "Xã Phước Hiệp", "Xã Tân An Hội",
     "Xã Trung Lập Thượng", "Xã Phước Thạnh", "Xã Thái Mỹ",
     "Xã Phú Mỹ Hưng", "Xã An Phú", "Xã An Nhơn Tây",
     "Xã Phạm Văn Cội", "Xã Trung Lập Hạ", "Xã Nhuận Đức",
     "Xã Tân Thạnh Tây", "Xã Tân Thạnh Đông", "Xã Phú Hòa Đông",
-    "Xã Bình Mỹ (huyện Củ Chi)", "Xã Hòa Phú", "Xã Trung An",
+    "Xã Bình Mỹ (Huyện Củ Chi)", "Xã Hòa Phú", "Xã Trung An",
     "Xã Thới Tam Thôn", "Xã Nhị Bình", "Xã Đông Thạnh",
-    "Xã Tân Hiệp (huyện Hóc Môn)", "Xã Tân Xuân", "Thị trấn Hóc Môn",
+    "Xã Tân Hiệp (Huyện Hóc Môn)", "Xã Tân Xuân", "Thị trấn Hóc Môn",
     "Xã Tân Thới Nhì", "Xã Xuân Thới Đông", "Xã Xuân Thới Sơn",
     "Xã Xuân Thới Thượng", "Xã Trung Chánh", "Xã Bà Điểm",
     "Thị trấn Nhà Bè", "Xã Phú Xuân", "Xã Phước Kiển", "Xã Phước Lộc",
@@ -159,10 +159,10 @@ let availableKeywords = [
     "Phường Thanh Tuyền", 
     "Phường An Điền", "Xã Long Nguyên",
     "Phường Mỹ Phước",
-    "Xã Tân Hưng (huyện Bàu Bàng)", "Xã Lai Hưng",
+    "Xã Tân Hưng (Huyện Bàu Bàng)", "Xã Lai Hưng",
     "Phường Chánh Phú Hòa", "Xã Hưng Hòa",
     "Phường Vĩnh Tân", "Thị trấn Tân Bình",
-    "Xã Bình Mỹ (huyện Bắc Tân Uyên)", "Phường Hội Nghĩa",
+    "Xã Bình Mỹ (Huyện Bắc Tân Uyên)", "Phường Hội Nghĩa",
     "Phường Uyên Hưng", "Xã Bạch Đằng", "Xã Tân Lập",
     "Xã Tân Mỹ",
     "Phường Khánh Bình", "Phường Tân Hiệp",
@@ -174,18 +174,67 @@ let availableKeywords = [
     "Thị trấn Phước Vĩnh", "Xã An Bình", 
     "Xã Tam Lập",
     "Xã Vĩnh Hòa", "Xã Phước Hòa",
-    "Xã Tân Hiệp (huyện Phú Giáo)", "Xã An Thái", "Xã Phước Sang",
+    "Xã Tân Hiệp (Huyện Phú Giáo)", "Xã An Thái", "Xã Phước Sang",
     "Xã An Linh", "Xã Tân Long", "Xã An Long",
     "Xã Trừ Văn Thố", "Xã Cây Trường II", 
     "Thị trấn Lai Uyên",
-    "Xã Long Tân","Xã Long Hòa (huyện Dầu Tiếng)", 
+    "Xã Long Tân","Xã Long Hòa (Huyện Dầu Tiếng)", 
     "Xã Minh Tân",
     "Xã Minh Thạnh",
     "Xã Minh Hòa",
     "Xã Thanh An (Bình Dương)",
     "Xã Định Hiệp",
-    "Thị trấn Dầu Tiếng", "Xã Định An", "Xã Định Thành"
+    "Thị trấn Dầu Tiếng", "Xã Định An", "Xã Định Thành",
+
+    "Phường Thới Hòa",
+
+
+    //Bà Rịa - Vũng Tàu
+    "Phường 1 (TP.Vũng Tàu)", "Phường 2 (TP.Vũng Tàu)", "Phường 3 (TP.Vũng Tàu)", "Phường 4 (TP.Vũng Tàu)", "Phường 5 (TP.Vũng Tàu)", "Phường Thắng Nhì", "Phường Thắng Tam", 
+    "Phường 7 (TP.Vũng Tàu)", "Phường 8 (TP.Vũng Tàu)", "Phường 9 (TP.Vũng Tàu)", "Phường Nguyễn An Ninh",
+    "Phường 10 (TP.Vũng Tàu)", "Phường Thắng Nhất", "Phường Rạch Dừa",
+    "Phường 11 (TP.Vũng Tàu)", "Phường 12 (TP.Vũng Tàu)",
+    "Xã Tân Hưng (TP.Bà Rịa)", "Xã Kim Dinh", "Xã Long Hương",
+    "Phường Phước Trung", "Phường Phước Nguyên", "Phường Long Toàn", "Phường Phước Hưng",
+    "Phường Long Tâm", "Xã Hòa Long", "Xã Long Phước",
+    "Phường Tân Hòa", "Phường Tân Hải",
+    "Phường Tân Phước", "Phường Phước Hòa",
+    "Phường Phú Mỹ (TP.Phú Mỹ)",  "Phường Mỹ Xuân",
+    "Phường Hắc Dịch", "Xã Sông Xoài",
+
+    "Xã Tóc Tiên", "Xã Châu Pha",
+    "Thị trấn Long Hải", "Xã Phước Tỉnh", "Xã Phước Hưng",
+    "Thị trấn Long Điền", "Xã Tam An",
+    "Thị trấn Phước Hải", "Xã Phước Hội",
+    "Thị trấn Đất Đỏ", "Xã Long Tân (Huyện Long Đất)", "Xã Láng Dài, Xã Phước Long Thọ",
+    "Xã Nghĩa Thành", "Xã Đá Bạc", 
+    "Thị trấn Ngãi Giao", "Xã Bình Ba", "Xã Suối Nghệ",
+    "Thị trấn Kim Long", "Xã Bàu Chinh", "Xã Láng Lớn",
+    "Xã Cù Bị", "Xã Xà Bang",
+    "Xã Bình Giã", "Xã Bình Trung", "Xã Quảng Thành", 
+    "Xã Xuân Sơn", "Xã Suối Rao", "Xã Sơn Bình", 
+    "Thị trấn Phước Bửu", "Xã Phước Tân", "Xã Phước Thuận",
+    "Xã Xuyên Mộc", "Xã Bông Trang", "Xã Bưng Riềng", 
+    "Xã Hòa Hội", "Xã Hòa Bình", "Xã Hòa Hưng",  
+    "Xã Bàu Lâm", "Xã Tân Lâm", 
+    "Huyện Côn Đảo",
+
+    "Xã Bình Châu",
+    "Xã Hòa Hiệp",
+    "Xã Long Sơn"
 ];
+
+function noTone(str){
+  return str.normalize("NFD")
+            .toLowerCase()
+            .replace(/[\u0300-\u036f]/g,"")
+            .replace(/đ/g,"d");
+}
+
+// Tạo mảng đã chuẩn hoá để so khớp nhưng vẫn giữ nhãn hiển thị có dấu
+const normKeywords = availableKeywords.map(label => ({
+  label, key: noTone(label)
+}));
 
 const atcpBox = document.querySelector(".atcp-box");
 const nhaplieu = document.getElementById("inputCu");
@@ -198,9 +247,10 @@ nhaplieu.onkeyup = function(e) {
     let atcpRS = [];
     let input = nhaplieu.value;
     if (input.length) {
-        atcpRS = availableKeywords.filter((keyword) => {
-          return keyword.toLowerCase().includes(input.toLowerCase())
-        });
+        const q = noTone(input);
+        atcpRS = normKeywords
+            .filter(k => k.key.includes(q))
+            .map(k => k.label);  // hiển thị bản có dấu
     }
     display(atcpRS);
 

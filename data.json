@@ -173,7 +173,7 @@
     },
     "phuong binh chieu": "Phường Tam Bình", "phuong tam phu": "Phường Tam Bình", "phuong tam binh": "Phường Tam Bình",
     "phuong linh trung": "Phường Linh Xuân", "phuong linh xuan": "Phường Linh Xuân",
-    "phuong tan phu tp thu duc": "Phường Tăng Nhơn Phú", "phuong tang nhon phu A": "Phường Tăng Nhơn Phú", "phuong tang nhon phu B": "Phường Tăng Nhơn Phú", "phuong hiep phu": "Phường Tăng Nhơn Phú",
+    "phuong tan phu tp thu duc": "Phường Tăng Nhơn Phú", "phuong tang nhon phu a": "Phường Tăng Nhơn Phú", "phuong tang nhon phu b": "Phường Tăng Nhơn Phú", "phuong hiep phu": "Phường Tăng Nhơn Phú",
     "phuong long thanh my": {
       "new": ["Phường Tăng Nhơn Phú", "Phường Long Bình"],
       "note": "Phường Long Thạnh Mỹ chia 2 phần theo NQ 1685"
@@ -328,5 +328,44 @@
       "new": ["Xã Thanh An", "Xã Dầu Tiếng"],
       "note": "Định Hiệp chia 2 phần theo NQ 1685"
     },
-    "thi tran dau tieng": "Xã Dầu Tiếng", "xa dinh an": "Xã Dầu Tiếng", "xa dinh thanh": "Xã Dầu Tiếng"
+    "thi tran dau tieng": "Xã Dầu Tiếng", "xa dinh an": "Xã Dầu Tiếng", "xa dinh thanh": "Xã Dầu Tiếng",
+
+    "phuong thoi hoa": "Phường Thới Hòa (Không sáp nhập)",
+
+
+
+  "_note3": "Bà Rịa - Vũng Tàu",   
+    
+    "phuong 1 tp vung tau": "Phường Vũng Tàu", "phuong 2 tp vung tau": "Phường Vũng Tàu", "phuong 3 tp vung tau": "Phường Vũng Tàu", "phuong 4 tp vung tau": "Phường Vũng Tàu", "phuong 5 tp vung tau": "Phường Vũng Tàu", "phuong thang nhi": "Phường Vũng Tàu", "phuong thang tam": "Phường Vũng Tàu",
+    "phuong 7 tp vung tau": "Phường Tam Thắng", "phuong 8 tp vung tau": "Phường Tam Thắng", "phuong 9 tp vung tau": "Phường Tam Thắng", "phuong nguyen an ninh": "Phường Tam Thắng",
+    "phuong 10 tp vung tau": "Phường Rạch Dừa", "phuong thang nhat": "Phường Rạch Dừa", "phuong rach dua": "Phường Rạch Dừa",
+    "phuong 11 tp vung tau": "Phường Phước Thắng", "phuong 12 tp vung tau": "Phường Phước Thắng",
+    "xa tan hung tp ba ria": "Phường Long Hương", "xa kim dinh": "Phường Long Hương", "xa long huong": "Phường Long Hương",
+    "phuong phuoc trung": "Phường Bà Rịa", "phuong phuoc nguyen": "Phường Bà Rịa", "phuong long toan": "Phường Bà Rịa", "phuong phuoc hung": "Phường Bà Rịa",
+    "phuong long tam": "Phường Tam Long", "xa hoa long": "Phường Tam Long", "xa long phuoc": "Phường Tam Long",
+    "phuong tan hoa": "Phường Tân Hải", "xa tan hai": "Phường Tân Hải",
+    "phuong tan phuoc": "Phường Tân Phước", "phuong phuoc hoa": "Phường Tân Phước",
+    "phuong phu my tp phu my": "Phường Phú Mỹ", "phuong my xuan": "Phường Phú Mỹ",
+    "phuong hac dich": "Phường Tân Thành", "xa song xoai": "Phường Tân Thành",
+
+    "xa toc tien": "Xã Châu Pha", "xa chau pha": "Xã Châu Pha",
+    "thi tran long hai": "Xã Long Hải", "xa phuoc tinh": "Xã Long Hải", "xa phuoc hung": "Xã Long Hải",
+    "thi tran long dien": "Xã Long Điền", "xa tam an": "Xã Long Điền",
+    "thi tran phuoc hai": "Xã Phước Hải", "xa phuoc hoi": "Xã Phước Hải",
+    "thi tran dat do": "Xã Đất Đỏ", "xa long tan huyen long dat": "Xã Đất Đỏ", "xa lang dai": "Xã Đất Đỏ", "xa phuoc long tho": "Xã Đất Đỏ",
+    "xa nghia thanh": "Xã Nghĩa Thành", "xa da bac": "Xã Nghĩa Thành",
+    "thi tran ngai giao": "Xã Ngãi Giao", "xa binh ba": "Xã Ngãi Giao", "xa suoi nghe": "Xã Ngãi Giao",
+    "thi tran kim long": "Xã Kim Long", "xa bau chinh": "Xã Kim Long", "xa lang lon": "Xã Kim Long",
+    "xa cu bi": "Xã Châu Đức", "xa xa bang": "Xã Châu Đức",
+    "xa binh gia": "Xã Bình Giã", "xa binh trung": "Xã Bình Giã", "xa quang thanh": "Xã Bình Giã",
+    "xa xuan son": "Xã Xuân Sơn", "xa suoi rao": "Xã Xuân Sơn","xa son binh": "Xã Xuân Sơn",
+    "thi tran phuoc buu": "Xã Hồ Tràm", "xa phuoc tan": "Xã Hồ Tràm", "xa phuoc thuan": "Xã Hồ Tràm",
+    "xa xuyen moc": "Xã Xuyên Mộc", "xa bong trang": "Xã Xuyên Mộc", "xa bung rieng": "Xã Xuyên Mộc",
+    "xa hoa hoi": "Xã Hòa Hội", "xa hoa binh": "Xã Hòa Hội", "xa hoa hung": "Xã Hòa Hội",
+    "xa bau lam": "Xã Bàu Lâm", "xa tan lam": "Xã Bàu Lâm",
+    "huyen con dao": "Đặc khu Côn Đảo",
+
+    "xa binh chau": "Xã Bình Châu (Không sáp nhập)",
+    "xa hoa hiep": "Xã Hòa Hiệp (Không sáp nhập)",
+    "xa long son": "Xã Long Sơn (Không sáp nhập)"
 }

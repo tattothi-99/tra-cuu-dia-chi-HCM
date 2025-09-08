@@ -1,6 +1,5 @@
 let availableKeywords2 = [
     //TP.HCM
-
     "Phường Sài Gòn",
     "Phường Tân Định",
     "Phường Bến Thành",
@@ -108,7 +107,6 @@ let availableKeywords2 = [
 
 
     //Bình Dương
-
     "Phường Đông Hòa",
     "Phường Dĩ An",
     "Phường Tân Đông Hiệp",
@@ -144,8 +142,57 @@ let availableKeywords2 = [
     "Xã Long Hòa",
     "Xã Thanh An (Bình Dương)",
     "Xã Dầu Tiếng",
-    "Xã Minh Thạnh"
+    "Xã Minh Thạnh",
+
+    "Phường Thới Hòa",
+
+
+    //Bà Rịa - Vũng Tàu
+    "Phường Vũng Tàu",
+    "Phường Thắng Tam",
+    "Phường Rạch Dừa",
+    "Phường Phước Thắng",
+    "Phường Long Hương",
+    "Phường Bà Rịa",
+    "Phường Tam Long",
+    "Phường Tân Hải",
+    "Phường Tân Phước",
+    "Phường Phú Mỹ",
+    "Phường Tân Thành",
+
+    "Xã Châu Pha",
+    "Xã Long Hải",
+    "Xã Long Điền",
+    "Xã Phước Hải",
+    "Xã Đất Đỏ",
+    "Xã Nghĩa Thành",
+    "Xã Ngãi Giao",
+    "Xã Kim Long",
+    "Xã Châu Đức",
+    "Xã Bình Giã",
+    "Xã Xuân Sơn",
+    "Xã Hồ Tràm",
+    "Xã Xuyên Mộc",
+    "Xã Hòa Hội",
+    "Xã Bàu Lâm",
+    "Đặc khu Côn Đảo",
+
+    "Xã Bình Châu",
+    "Xã Hòa Hiệp",
+    "Xã Long Sơn"
 ];
+
+function noTone(str){
+  return str.normalize("NFD")
+            .toLowerCase()
+            .replace(/[\u0300-\u036f]/g,"")
+            .replace(/đ/g,"d");
+}
+
+// Tạo mảng đã chuẩn hoá để so khớp nhưng vẫn giữ nhãn hiển thị có dấu
+const normKeywords2 = availableKeywords2.map(label => ({
+  label, key: noTone(label)
+}));
 
 const atcpBox2 = document.querySelector(".atcp-box2");
 const nhaplieu2 = document.getElementById("inputMoi");
@@ -158,9 +205,10 @@ nhaplieu2.onkeyup = function(e) {
     let atcpRS2 = [];
     let input2 = nhaplieu2.value;
     if (input2.length) {
-        atcpRS2 = availableKeywords2.filter((keyword) => {
-          return keyword.toLowerCase().includes(input2.toLowerCase())
-        });
+        const q2 = noTone(input2);
+        atcpRS2 = normKeywords2
+            .filter(k => k.key.includes(q2))
+            .map(k => k.label);  // hiển thị bản có dấu
     }
     display2(atcpRS2);
 
