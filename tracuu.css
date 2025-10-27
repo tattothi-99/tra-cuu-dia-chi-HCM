@@ -2,8 +2,10 @@ body {
     padding: 0;
     background-image: url("tphcm-istockphoto.jpg");
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     /* background-repeat: no-repeat; */
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times", sans-serif;;
 }
 
 h1 {
@@ -29,15 +31,15 @@ h3 {
     margin-top: 0;
     margin-bottom: 40px;
     font-size: 18px;
-    color: white
+    color: black;
 }
 
 .card {
     background:rgb(209, 234, 255);
-    border: 1px solid #e5e7eb;
+    border: none;
     border-radius: 12px;
     padding: 16px;
-    box-shadow: 0 1px 2px rgba(0,0,0,.04);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
     margin-top: 20px;
 }
 
@@ -77,23 +79,25 @@ h3 {
 }
 
 .atcp-box ul, .atcp-box2 ul {
-    padding: 0px 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .atcp-box ul li, .atcp-box2 ul li {
     font-size: 20px;
     list-style: none;
     border-radius: 3px;
-    padding: 5px 10px;
+    padding:  8px 12px;
     cursor: pointer;
 }
 
 .atcp-box ul li:hover {
-    background: white;
+    background: #f1f1f1;
 }
 
 .atcp-box2 ul li:hover {
-    background: white;
+    background: #f1f1f1;
 }
 
 .atcp-box, .atcp-box2 {
