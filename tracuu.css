@@ -222,4 +222,7 @@ h3 {
         word-wrap: break-word;
         margin: auto;
     }
+    .footer {
+        font-size: 18px;
+    }
 }
