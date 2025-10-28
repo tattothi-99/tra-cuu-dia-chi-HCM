@@ -67,7 +67,7 @@ h3 {
 }
 
 #inputCu, #inputMoi {
-    /* background: transparent; */
+    background: transparent; 
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -170,14 +170,15 @@ h3 {
 
 .footer {
     /* position: fixed; */
+    font-size: 22px;
     left: 0;
     bottom: 0;
     width: 100%;
-    background: rgb(230, 244, 255);
     text-align: center;
-    padding: 10px 0;
+    margin: 0;
     border: none;
 }
+
 
 @media (max-width: 700px) {
     h1 {
