@@ -112,26 +112,16 @@ h3 {
 }
 
 #btnSearch, #btnSearch2 {
-    background-color: green;
+    /* background-color: green;
     color: white;
+    height: 30px;*/
     font-size: 20px;
-    height: 30px;
     width: 110px;
     margin-top: 30px;
     display: block;
     margin-left: auto;  
     margin-right: auto;
     border-radius: 2px;
-}
-
-#btnSearch:hover {
-    background-color: darkgreen;
-    cursor: pointer;
-}
-
-#btnSearch2:hover {
-    background-color: darkgreen;
-    cursor: pointer;
 }
 
 .tip {
@@ -166,6 +156,14 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     border-radius: 2px;
+}
+
+.badge {
+    color:#333;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
 }
 
 .footer {
